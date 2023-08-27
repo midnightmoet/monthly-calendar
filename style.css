@@ -78,14 +78,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     color: lightgray;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 0.3s;
     /* border: 1px solid white;  Using it for visual of space */
 }
 
-.days div:hover {
+.days div:hover:not(.empty) {
+    background: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+.today {
     background: lightseagreen;
     color: white;
 }
