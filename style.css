@@ -95,3 +95,60 @@ body {
     background: lightseagreen;
     color: white;
 }
+
+
+/* Media Queries Section */
+@media  (max-width: 450px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: slategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calendar {
+        width: 300px;
+        height: 475px;
+    }
+
+    .month h1 {
+        font-size: 25px;
+    }
+
+    .month p {
+        font-size: 14px;
+    }
+
+    .weekdays div {
+        font-size: 14px;
+    }
+
+    .days div {
+        font-size: 14px;
+    }
+
+    .days {
+        height: 300px;
+    }
+
+    .days div:hover:not(.empty) {
+        background: lightseagreen;
+        color: white;
+        cursor: pointer;
+    }
+
+    .today {
+        background: lightseagreen;
+        color: white;
+    }
+}
